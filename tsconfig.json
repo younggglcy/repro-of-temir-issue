@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+  },
+  "exclude": ["dist", "node_modules"]
+}
