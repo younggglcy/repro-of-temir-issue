@@ -1,9 +1,11 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
 import { TBox, TText, useInput } from '@temir/core'
-const count = ref(0)
+import { useCounter } from './composables/useCounter'
+
+const { add, count } = useCounter()
+
 setInterval(() => {
-  count.value++
+  add(1)
 }, 100)
 useInput((input, key) => {
   console.log(input)
